@@ -4,7 +4,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
     return (
         <div className="mt-3">
             <Error errors={input.errors} fieldName={'paymentMode'} />
-            {/*Pay with Paypal*/}
+            {/*Pay with Paypal
             <div className="form-check wd-payment-input-container mt-2">
                 <label className="form-check-label">
                     <input
@@ -16,8 +16,8 @@ const PaymentModes = ({ input, handleOnChange }) => {
                     />
                     <span className="wd-payment-content">Pay with Paypal</span>
                 </label>
-            </div>
-            {/*Pay with Stripe*/}
+            </div>*/}
+            {/*Pay with Stripe
             <div className="form-check wd-payment-input-container">
                 <label className="form-check-label">
                     <input
@@ -28,6 +28,18 @@ const PaymentModes = ({ input, handleOnChange }) => {
                         type="radio"
                     />
                     <span className="wd-payment-content">Pay with Stripe</span>
+                </label>
+            </div>*/}
+            <div className="form-check wd-payment-input-container">
+                <label className="form-check-label">
+                    <input
+                        onChange={handleOnChange}
+                        value="cod"
+                        className="form-check-input"
+                        name="payment_method"
+                        type="radio"
+                    />
+                    <span className="wd-payment-content">Cash on Delivery</span>
                 </label>
             </div>
             {/*	Payment Instructions*/}
