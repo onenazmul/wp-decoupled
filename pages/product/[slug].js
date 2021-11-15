@@ -2,6 +2,7 @@ import Layout from '../../src/components/layouts/Layout';
 import AddToCartButton from '../../src/components/cart/AddToCartButton';
 import client from '../../src/apollo/ApolloClient';
 import Image from '../../src/components/Image';
+import Head from 'next/head';
 import { 
     PRODUCT_QUERY,
     PRODUCT_SLUGS 
@@ -14,6 +15,9 @@ const Product = ({data}) => {
 
     return (
         <Layout>
+            <Head>
+                <title>Product</title>
+            </Head>
             {product ? (
                 <div className="mx-auto mt-5">
                     <div className="row">
