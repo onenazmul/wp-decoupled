@@ -16,7 +16,7 @@ const Product = ({data}) => {
     return (
         <Layout>
             <Head>
-                <title>Product</title>
+                <title>{product?.name} - WooAwesome!</title>
             </Head>
             {product ? (
                 <div className="mx-auto mt-5">
