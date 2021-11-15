@@ -36,17 +36,17 @@ const PaymentModes = ({ input, handleOnChange }) => {
                         onChange={handleOnChange}
                         value="cod"
                         className="form-check-input"
-                        name="payment_method"
+                        name="paymentMode"
                         type="radio"
                     />
                     <span className="wd-payment-content">Cash on Delivery</span>
                 </label>
             </div>
-            {/*	Payment Instructions*/}
+            {/*	Payment Instructions
             <div className="wd-checkout-payment-instructions">
                 Please send a check to Store Name, Store Street, Store Town, Store State / County,
                 Store Postcode.
-            </div>
+            </div>*/}
         </div>
     );
 };
