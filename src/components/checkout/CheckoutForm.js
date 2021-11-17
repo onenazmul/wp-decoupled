@@ -22,7 +22,7 @@ const CheckoutForm = () => {
         email: '',
         createAccount: false,
         orderNotes: '',
-        paymentMode: '',
+        payment_method: '',
         errors: null
     };
 
